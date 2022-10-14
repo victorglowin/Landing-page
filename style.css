@@ -8,20 +8,12 @@ body {
     background-color: white;
     height: 100vh;
 
-}
-/*This is the styling for the header*/
+    @media (min-width: 50em) {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
-header {
-    color: white;
-    padding: 12px;
-    background-image: url(backgroundphoto.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-
-}
-
-.header-container {
-    margin: 20px 100px 20px 100px;
 }
 
 /* This is the styling for navigation bar */
@@ -65,6 +57,21 @@ a {
     color: white;
 }
 
+/*This is the styling for the header*/
+
+header {
+    color: white;
+    padding: 12px;
+    background-image: url(backgroundphoto.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.header-container {
+    margin: 20px 100px 20px 100px;
+}
+
 .Description {
     display: flex;
     align-items: center;
@@ -104,6 +111,7 @@ button {
     font-size: 16px;
     border-radius: 10px;
     width: fit-content;
+    border: 1px solid white;
 }
 
 /*This is the styling for section one (info)*/
@@ -116,20 +124,20 @@ button {
     text-align: center;
     height: 70vh;
     margin-bottom: 50px;
+    margin-top: 30px;
 
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
 .info-container {
     display: flex;
     justify-content: center;
-    width: fit-content;
-    
+    gap: 50px;
 }
 
 .info-container img {
@@ -149,6 +157,11 @@ button {
 .info-container div {
     font-size: 18px;
     padding: 10px;
+}
+
+.one {
+    width: 250px;
+    height: 200px;
 }
 
 /*This is the style for section two (quote)*/
@@ -238,7 +251,7 @@ button {
 
 .footer {
     background-color: rgb(117, 117, 117);
-    height: 10vh;
+    height: 50px;
     color: white;
 
     display: flex;
@@ -247,6 +260,6 @@ button {
 }
 
 .footer div {
-    font-size: 20px;
+    font-size: 12px;
     font-family: sans-serif;
 }
